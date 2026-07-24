@@ -6,8 +6,8 @@ This repository holds the source code for the the self watering plant embedded s
 A smart plant watering system built using **Raspberry Pi Pico** and **MicroPython**.
 
 The system automatically waters a plant based on soil moisture while monitoring the available water level to prevent the pump from running dry.
+<img width="1542" height="2047" alt="full package" src="https://github.com/user-attachments/assets/b69a7a5c-7dde-4fc2-89f8-17e943638890" />
 
----
 
 ## Project Overview
 
@@ -27,7 +27,7 @@ The system also provides visual feedback through LEDs to indicate its current op
 - Pump protection against dry running
 - LED status indicators
 - Implemented entirely in MicroPython
-
+<img width="1542" height="2047" alt="embedded 2" src="https://github.com/user-attachments/assets/3a8a5759-f520-4fb6-aabe-e33abc39d951" />
 ---
 
 ## Hardware Components
@@ -41,7 +41,7 @@ The system also provides visual feedback through LEDs to indicate its current op
 - Relay
 - Resistors
 - Jumper cables
-
+<img width="1152" height="2048" alt="embedded 1" src="https://github.com/user-attachments/assets/8e87bf27-e4ff-4b76-acfb-4355fe047368" />
 
 ## System Logic
 
@@ -56,6 +56,23 @@ The watering process follows these rules:
 5. If the water reservoir is empty:
    - Keep the pump OFF regardless of soil moisture.
 6. 4 LEDs lights are adjusted based on the current conditions
+        Soil Sensor
+             │
+             ▼
+      Raspberry Pi Pico
+             │
+             ├────────► LEDs
+             │
+ Ultrasonic Sensor
+             │
+             ▼
+      Decision Logic
+             │
+             ▼
+        Water Pump
+
+<img width="1277" height="671" alt="simulation" src="https://github.com/user-attachments/assets/f53ad549-e148-42de-b470-c4269c4aadf9" />
+
 ---
 
 ## LED Indicators
