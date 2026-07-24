@@ -56,7 +56,8 @@ The watering process follows these rules:
 5. If the water reservoir is empty:
    - Keep the pump OFF regardless of soil moisture.
 6. 4 LEDs lights are adjusted based on the current conditions
-        Soil Sensor
+
+    Soil Sensor
              │
              ▼
       Raspberry Pi Pico
