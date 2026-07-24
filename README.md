@@ -57,20 +57,24 @@ The watering process follows these rules:
    - Keep the pump OFF regardless of soil moisture.
 6. 4 LEDs lights are adjusted based on the current conditions
 
-    Soil Sensor
-             │
-             ▼
-      Raspberry Pi Pico
-             │
-             ├────────► LEDs
-             │
- Ultrasonic Sensor
-             │
-             ▼
-      Decision Logic
-             │
-             ▼
-        Water Pump
+
++----------------------+        +----------------------+
+| Soil Moisture Sensor |        | Ultrasonic Sensor    |
++----------+-----------+        +----------+-----------+
+           \                         /
+            \                       /
+             \                     /
+              v                   v
+           +---------------------------+
+           |     Raspberry Pi Pico     |
+           +-------------+-------------+
+                         |
+          +--------------+--------------+
+          |                             |
+          v                             v
+ +-------------------+        +-------------------+
+ |    Water Pump     |        |   Status LEDs     |
+ +-------------------+        +-------------------+
 
 <img width="1277" height="671" alt="simulation" src="https://github.com/user-attachments/assets/f53ad549-e148-42de-b470-c4269c4aadf9" />
 
