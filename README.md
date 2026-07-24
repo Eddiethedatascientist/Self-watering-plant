@@ -82,6 +82,10 @@ Examples include:
 
 ---
 
+## Demonstration video
+https://github.com/user-attachments/assets/9d310f37-0480-468f-a6e9-80b46fea512f
+
+---
 ## My Contribution
 
 I was responsible for the embedded software implementation.
