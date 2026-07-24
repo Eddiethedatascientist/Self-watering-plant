@@ -44,9 +44,8 @@ The system also provides visual feedback through LEDs to indicate its current op
 <img width="1152" height="2048" alt="embedded 1" src="https://github.com/user-attachments/assets/8e87bf27-e4ff-4b76-acfb-4355fe047368" />
 
 ## System Logic
-
+<img width="1536" height="1024" alt="diagram" src="https://github.com/user-attachments/assets/bf2b8fd8-0b9c-4872-a0ac-ed823f0e9ba3" />
 The watering process follows these rules:
-
 1. Read the soil moisture sensor.
 2. Measure the water level using the ultrasonic sensor.
 3. If the soil is dry **and** there is sufficient water in the reservoir:
@@ -56,25 +55,6 @@ The watering process follows these rules:
 5. If the water reservoir is empty:
    - Keep the pump OFF regardless of soil moisture.
 6. 4 LEDs lights are adjusted based on the current conditions
-
-
-+----------------------+        +----------------------+
-| Soil Moisture Sensor |        | Ultrasonic Sensor    |
-+----------+-----------+        +----------+-----------+
-           \                         /
-            \                       /
-             \                     /
-              v                   v
-           +---------------------------+
-           |     Raspberry Pi Pico     |
-           +-------------+-------------+
-                         |
-          +--------------+--------------+
-          |                             |
-          v                             v
- +-------------------+        +-------------------+
- |    Water Pump     |        |   Status LEDs     |
- +-------------------+        +-------------------+
 
 <img width="1277" height="671" alt="simulation" src="https://github.com/user-attachments/assets/f53ad549-e148-42de-b470-c4269c4aadf9" />
 
